@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    padding-top: 25px;
+    align-items: center;
+}
+.menu{
+    list-style: none;
+    display: flex;
+}
+.menu a{
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.menu a:hover{
+    background-color: rgb(0, 0, 0);
+    border-radius: 22px;
+    color: white;
+    transition: all .43s;
+}
+
+.Logo{
+    cursor: pointer;
+}
+.Logo img{
+    height: 70px;
+    margin-left: 30px;
+}
+.menu-icons i{
+    margin: 8px 12px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(15, 15, 15);
+}
+
+section{
+    padding: 20% 10px;
+}
+
+.menu-banner{
+    background-image: linear-gradient(rgba(0,0,0,0.34),rgba(46, 14, 104, 0.34)), url(image/best.jpgss);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+@media(max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    } 
+)    
+}
+@media(max-width:630px){
+    .content h3{
+        font-size: 50px;
+        transition: .4s;
+    }
+    .content h1{
+        font-size: 30px;
+        transition: .4s;
+    }
+
+    .content p{
+        font-size: 18px;
+        transition: .4s;
+    }
+}
+
+@media(max-width:750px){
+    .menu{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 300px;
+        height: 130vh;
+        background:rgba(109, 4, 4, 0.452);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .4s;
+    }
+    .menu a{
+        display: block;
+        margin: 18px 0;
+    }
+    .menu.open {
+        right: 0;
+    }
+}
+
+.content{
+    text-align: center;
+    padding: 30, 40;
+}
+ h3{
+font-size: 30px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    font-size: 50px;
+}
+span{
+    color: brown;
+}
+
+p{
+    padding: 10px;
+    margin: 40px;
+}
